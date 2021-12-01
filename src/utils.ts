@@ -1,9 +1,5 @@
 export const createRouter = (routes: { [key: string]: () => Promise<any> }): void => {
-    const getRoute = (path: string) => {
-        return routes[path] || routes['/'];
-    }
-
-    getRoute(window.location.pathname).call({});
+    (routes[window.location.pathname] || routes['/']).call({});
 }
 
 export const getContext = (): WebGLRenderingContext => {
