@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc && vite build"
+		"build": "tsc && vite build",
+		"deploy": "gh-pages -d dist"
 	},
 	"devDependencies": {
 		"@types/gl-matrix": "^3.2.0",
