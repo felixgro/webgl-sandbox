@@ -1,0 +1,17 @@
+{
+	"name": "webgl",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "parcel src/index.html"
+	},
+	"devDependencies": {
+		"@parcel/transformer-glsl": "^2.0.1",
+		"@types/gl-matrix": "^3.2.0",
+		"parcel": "^2.0.1"
+	},
+	"dependencies": {
+		"gl-matrix": "^3.4.3"
+	}
+}
